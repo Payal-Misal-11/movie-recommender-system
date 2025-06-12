@@ -41,7 +41,8 @@ movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # UI
-st.title('Movie Recommender System')
+st.title('Movie Recommender System')git lfs install
+
 selected_movie_name = st.selectbox(
     'How would you like to select a movie?',
     movies['title'].values
