@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendation System (Streamlit)
+# 🎬 Movie Recommendation System
 
 A **content-based Movie Recommendation System** built using **Python and Streamlit** that suggests similar movies based on user selection and displays their posters using the **TMDB API**.
 
@@ -37,5 +37,6 @@ This system uses **content-based filtering**:
   - pickle
   - requests
   - streamlit
+
 
 
