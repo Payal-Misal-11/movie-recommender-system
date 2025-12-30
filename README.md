@@ -1,53 +1,41 @@
-# 🎬 Movie Recommendation System
+# 🎬 Movie Recommendation System (Streamlit)
 
-A Machine Learning–based **Movie Recommendation System** that suggests movies to users based on their preferences using collaborative filtering and content-based filtering techniques.
-
----
-
-## 📌 Features
-
-- Personalized movie recommendations
-- Content-Based Filtering (genre, description, metadata)
-- Hybrid recommendation approach
-- Scalable and modular design
-- Simple and interactive user interface
+A **content-based Movie Recommendation System** built using **Python and Streamlit** that suggests similar movies based on user selection and displays their posters using the **TMDB API**.
 
 ---
 
-## 🧠 Recommendation Techniques Used
+## 🚀 Demo Features
 
-### 1️⃣ Content-Based Filtering
-- Recommends movies similar to the ones a user likes
-- Uses:
-  - Movie genres
-  - Overview/description
-  - TF-IDF Vectorization
-  - Cosine Similarity
+- Select a movie from a dropdown
+- Get **Top 5 similar movie recommendations**
+- Fetch and display **real-time movie posters**
+- Clean and interactive **Streamlit UI**
 
-### 2️⃣ Collaborative Filtering
-- Recommends movies based on user behavior
-- Uses:
-  - User–Movie ratings
-  - Matrix Factorization / KNN
-  - Surprise / Scikit-learn libraries
+---
 
-### 3️⃣ Hybrid Model
-- Combines both approaches to improve accuracy and reduce cold-start problems
+## 🧠 How It Works
+
+This system uses **content-based filtering**:
+- Movies are represented as vectors
+- **Cosine similarity** is used to find similar movies
+- A **precomputed similarity matrix** ensures fast recommendations
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Python  
+- **Language:** Python
+- **Frontend:** Streamlit
+- **API:** TMDB (The Movie Database)
+- **ML Technique:** Content-Based Filtering (Cosine Similarity)
 - **Libraries & Frameworks:**
   - NumPy
   - Pandas
   - Scikit-learn
   - Surprise (optional)
   - NLTK / SpaCy (optional)
-- **Frontend (Optional):**
-  - Streamlit / Flask
-- **Dataset:**
-  - MovieLens Dataset
-  - TMDB Dataset
+  - pickle
+  - requests
+  - streamlit
+
 
